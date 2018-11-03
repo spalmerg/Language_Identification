@@ -28,7 +28,7 @@ Again, my solution here was twofold.
 - Second, as suggested, I performed add one smoothing to handle the unseen bigrams and unigrams in the test corpus. This effectively shifted some probability to the zero frequency counts and allowed us to compute the probabilities for each sentence, for each language corpus. 
 
 Compare your output file with the solution file provided in the Assignment2 folder (LangId.sol). How many times was your program correct?
-- My program had 99.66% efficiency
+- My program had 99.66% accuracy
 
 
 ### Question 3: 
@@ -36,7 +36,7 @@ Compare your output file with the solution file provided in the Assignment2 fold
 - For the zero-frequency adjustments for Good Turing, for unigrams I used the value of 1 (meaning that only 1 value is not seen in the training corpus), which follows assumptions used to derive Good Turing. For bigram zero frequency adjustments, for unseen bigrams, I used #(unigrams-squared) - #(seen bigrams)
 
 Compare your output file with the solution file provided in the Assignment2 folder (LangId.sol). How many times was your program correct?
-- My program had 100% efficiency
+- My program had 100% accuracy
 
 Which of the language models at Question#1, Question#2, and Question#3 is the best? 
 - Each model has its own advantages and disadvantages. Looking at accuracy, alone, the model in Question 3 performs the best. With these datasets, Good Turing effectively shifted probabilities to evaluate the language in the test sentences.
